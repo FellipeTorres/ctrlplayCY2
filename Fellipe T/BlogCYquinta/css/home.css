@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(192, 255, 197);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacao{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: rgb(147, 147, 147);
+    margin: 0, 5px;
+    padding: 8px;
+}
+
+.navegacao a:hover{
+    transition: 0.5s ease;
+    color: black;
+}
