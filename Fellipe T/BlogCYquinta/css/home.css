@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: snow;
+    font-family: "Montserrat", sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #cabecalho{
     width: 100%;
     height: 70px;
-    background-color: rgb(192, 255, 197);
+    background-color: rgb(172, 255, 179);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,17 +27,99 @@
     justify-content: end;
     flex-direction: row;
     align-items: center;
-
 }
 
 .navegacao a{
     text-decoration: none;
     color: rgb(147, 147, 147);
     margin: 0, 5px;
-    padding: 8px;
+    padding: 10px;
 }
 
 .navegacao a:hover{
     transition: 0.5s ease;
     color: black;
+}
+
+#sousou_no_frieren{
+    max-width: 70%;
+    width: 50%;
+}
+
+#sololeveling{
+    max-width: 70%;
+    width: 50%;
+}
+
+.divpai{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.parte1{
+    width: 50%;
+    height: 100%;
+}
+
+.parte2{
+    width: 50%;
+    height: 100%;
+    
+}
+
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card h1{
+    font: bold;
+    font-size: 2em;
+}
+
+.card img{
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card p {
+    width: 85%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.button{
+    width: 100px;
+    padding-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(87, 94, 138);
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+}
+
+
+.button:hover{
+    transition: 0.5s ease;
+    color: rgb(79, 143, 255);
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color:  rgb(172, 255, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
 }
