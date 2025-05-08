@@ -28,12 +28,26 @@
     <div class="divpai">
         <h2>Bem-vindo a pagina de animes, aonde falamos sobre os animes</h2>
         <section class="parte1">
+            <button onclick="abrirMSG()">para minha mãe</button>
+            <script>
+                function abrirMSG(){
+                    let textopramae = document.getElementById("textopramae");
+                        if( textopramae.innerHTML == "" ){
+                            textopramae.innerHTML = "mãe so queira te falar que eu te admiro muito, a senhora é a melhor mãe do mundo. se eu tivesse outras 100 vidas eu escolheria ser o seu filho, obrigado por tudo oque a senhora fez por mim. eu te amo muito  ";
+                        }
+                        else{
+                            textopramae.innerHTML = "";
+                        }
+                }
+            </script>
+
+            <p id="textopramae"></p>
 
         </section>
         <section class="parte2">
             <article class="card">
                 <h1 class="solo">Solo Leveling</h1>
-                <img src="../img/sololeveling.png" alt="" id="sololeveling">
+                <img src="../img/jinwoo.jpg" alt="" id="sololeveling">
                 <p class="informacoes_sololeveling">Sung Jinwoo, conhecido como o caçador mais fraco da humanidade,
                     quase perde a vida em uma misteriosa
                     <!-- masmorra. No entanto, é lá que tudo muda: ele recebe uma missão secreta que lhe concede uma
@@ -70,7 +84,5 @@
     <footer>
         <h6>2025 Blog Simples Fellipe Torres Costa Ctrl-Play</h6>
     </footer>
-
 </body>
-
 </html>
