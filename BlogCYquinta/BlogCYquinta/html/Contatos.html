@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pr-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/contatos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+    <script src="../script/contatar.js"></script>
+
+    <header id="cabecalho">
+        <div class="titulo1">
+            <h1>Contatos</h1>
+        </div>
+        <nav class="navegacao">
+            <a href="./home.html"><h3>Início</h3></a>
+            <a href="./Sobre.html"><h3>Sobre</h3></a>
+            <a href="#"><h3>Contatos</h3></a>
+        </nav>
+    </header>
+    <section class="pai animate__animated animate__bounceInLeft">
+        <h1>Fale conosco</h1>
+        <p>Tem alguma duvida, sugestão, ou elogio? envie sua mensagem</p>
+        <form class="formulario animate__animated animate__bounceInLeft" >
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+
+            <label for="assunto">Assunto</label>
+            <input type="text" name="assunto" id="assunto">
+
+            <label for="mensagem">Sua mensagem</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+
+            <input type="submit" value="enviar" id="botao">
+        </form>
+    </section>
+
+    <table id="BD">
+        <ol>
+            <tr>Nomes</tr>
+            <th>emailo</th>
+            <tr>assuntos</tr>
+            <th>mensagens</th>
+        </ol>
+    </table>
+</body>
+</html>
