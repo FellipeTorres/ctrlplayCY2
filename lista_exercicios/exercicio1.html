@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 1</title>
+</head>
+<body>
+    <div class="somar">
+        <input type="text" id="numero1" placeholder="digite um numero">
+        <input type="text" id="numero2" placeholder="digite outro numero">
+        <input type="text" id="resultado_" placeholder="Resultado">
+        <button onclick="resultado_da_operacao_somar()">=</button>
+    </div>
+
+    <div class="subtrair">
+        <input type="text" id="numero_1" placeholder="digite um numero">
+        <input type="text" id="numero_2" placeholder="digite outro numero">
+        <input type="text" id="resul" placeholder="Resultado">
+        <button onclick="resultado_da_operacao_subtrair()">=</button>
+    </div>
+
+    <div class="multiplicar">
+        <input type="text" id="numero" placeholder="digite um numero">
+        <input type="text" id="numero_x" placeholder="digite outro numero">
+        <input type="text" id="resulta" placeholder="Resultado">
+        <button onclick="resultado_da_operacao_multiplicar()">=</button>
+    </div>
+
+    <div class="divisao">
+        <input type="text" id="numer" placeholder="digite um numero">
+        <input type="text" id="numero__" placeholder="digite outro numero">
+        <input type="text" id="res" placeholder="Resultado">
+        <button onclick="resultado_da_operacao_divisao()">=</button>
+    </div>
+
+    <script>
+        function resultado_da_operacao_somar() {
+            var num1 = Number(document.getElementById("numero1").value);
+            var num2 = Number(document.getElementById("numero2").value);
+            var resultado = num1 + num2;
+            document.getElementById("resultado_").value = resultado;
+        }
+
+        function resultado_da_operacao_subtrair() {
+            var num_1 = Number(document.getElementById("numero_1").value);
+            var num_2 = Number(document.getElementById("numero_2").value);
+            var resultado = num_1 - num_2;
+            document.getElementById("resul").value = resultado;
+        }
+
+        function resultado_da_operacao_multiplicar() {
+            var nume = Number(document.getElementById("numero").value);
+            var nu = Number(document.getElementById("numero_x").value);
+            var resultado = nume * nu;
+            document.getElementById("resulta").value = resultado;
+        }
+
+        function resultado_da_operacao_divisao() {
+            var num_01 = Number(document.getElementById("numer").value);
+            var num_02 = Number(document.getElementById("numero__").value);
+            var resultado = num_01 / num_02 ;
+            document.getElementById("res").value = resultado;
+        }
+    </script>
+</body>
+</html>
