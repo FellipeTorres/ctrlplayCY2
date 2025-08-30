@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-conteiner{
+    text-align: center;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* tabuleiro */
+.board{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* cartas */
