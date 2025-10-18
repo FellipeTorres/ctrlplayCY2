@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="conteiner-form">
+        <h1>Cadastro</h1>
+        <form>
+            <div class="conteudo-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+
+                <label for="senha1">Senha</label>
+                <input type="senha1" id="senha1" placeholder="Digite sua senha">
+
+                <label for="senha2">Confirme sua senha</label>
+                <input type="senha2" id="senha2" placeholder="Confirme sua senha">
+                <a class="login" href="login.html">Ainda não tem uma conta? Login</a>
+                <p></p>
+            </div>
+
+            <input type="button" onclick="verificar()" value="Enviar" id="enviar" class="enviar">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
