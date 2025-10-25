@@ -47,6 +47,15 @@ function verificar() {
         allLabel[3].innerHTML = `<input type="radio" name="resposta" value="false" id="rsp4"> ${questions[3][4]}`
     }
 
-    if (counter === 5)
-        alert(points)
+    if (counter === 5){
+        let flz = document.getElementsByClassName("finalizar")[0]
+        let env = document.getElementsByClassName("enviar")[0]
+        env.style.display = "none"
+        flz.style.display = "inline-block"
+    }
+}
+
+function finalizar(){
+    window.location.href = `pontos.html?pt=${points}`
+
 }
